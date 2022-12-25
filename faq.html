@@ -1,0 +1,200 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- External Javascript libs_ext  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+      integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+      integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+      integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+    <script src="static/js/tagEditor/jquery.caret.min.js"></script>
+    <script src="static/js/tagEditor/jquery.tag-editor.min.js"></script>
+
+
+    <!-- Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link href="static/css/Lato.css" rel="stylesheet" />
+    <link href="static/css/Exo.css" rel="stylesheet" />
+    <link href="static/css/Cuprum.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/main.css" />
+    <!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css" />
+    <link rel="stylesheet" href="static/css/lazy_load.css" />
+    <link rel="stylesheet" href="static/css/typeahead.css" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <title>Developmental AI: FAQ</title>
+
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GT7LEVW06Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-GT7LEVW06Z');
+    </script>
+    <!-- head block ends here-->
+    
+<style>
+    table, th, td {
+        border:1px solid black;
+    }
+
+    .red-hyper-link {
+        color: #1c6fdd !important;
+    }
+</style>
+
+  </head>
+
+  <body>
+    <!-- NAV -->
+    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #e7ebf1;" id="main-nav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="static/images/small_logo.png" style="width: 300px;"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html" style="font-family: 'Ubuntu', sans-serif;">Home</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="papers.html" style="font-family: 'Ubuntu', sans-serif;">Papers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="meetings.html" style="font-family: 'Ubuntu', sans-serif;">Meetings</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="join_us.html" style="font-family: 'Ubuntu', sans-serif;">Join Us</a>
+            </li>
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="faq.html" style="font-family: 'Ubuntu', sans-serif;">FAQ</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <!-- User Overrides -->
+
+    
+    <!-- top block ends here-->
+    
+
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+         
+      </div>
+      <!-- Content -->
+      <div class="content">
+        
+
+<div class="main-text" style="width: 70%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 5vh;">
+<p class="infopage-title-1" style="padding-top: 5vh;">What is this?</p>
+<p class="infopage-text">
+This website serves to help connect developmental science and computer science researchers. To facilitate this, one of our goals is to maintain a library of works at the intersection of the fields. Please look at the Papers section of the website.
+</p>
+
+<!-- Keyword Explanations Section -->
+<p class="infopage-title-1">Keyword Explanations</p>
+<p class="infopage-text">Here are the working definitions we propose to help organize our library of papers. We encourage suggestions, edits and additions, as these
+    definitions will surely evolve over time.
+</p>
+<table id="keyword-explanation-table" style="width:100%; margin-bottom: 20px;">
+    <tr>
+        <th>Keyword</th>
+        <th>Explanation</th>
+    </tr>
+</table>
+
+<script>
+    const keyword2expanation = {
+        "Visual Perception": "Visual understanding of the world.",  
+        "Language": "Language acquisition",                                                                       
+        "Motor Development": "Developing the capacity to move in the world.",                                     
+        "Shape": "Learning the 2D/3D shape of objects and scenes",                                                      
+        "Object Recognition": "Learning how to recognize and categorize objects",                                 
+        "Fast Mapping": "Word acqusition based on minimal information",                                                           
+        "Mutual Exclusivity": "An assumption that helps learning, e.g. only one objecty has one label",                                   
+        "Few-Shot/Low-Shot Learning": "Learning novel concepts from minimal supervision, using only a few labelled samples",             
+        "Speech": "Research pertaining to speech development and understanding",   
+    };
+    for(entry of Object.entries(keyword2expanation)){
+        const keyword = entry[0];
+        const explanation = entry[1];
+        d3.select("#keyword-explanation-table")
+        .append("tr")
+        .html(`
+        <td>${keyword}</td>
+        <td>${explanation}</td>
+        `);
+    }
+</script>
+
+      </div>
+    </div>
+
+    <!-- body block ends here-->
+    
+
+
+  </body>
+
+</html>

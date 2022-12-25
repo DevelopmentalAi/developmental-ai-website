@@ -1,0 +1,166 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- External Javascript libs_ext  -->
+        <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+            integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+            integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+
+
+        <!-- Library libs_ext -->
+        <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+        <script src="static/js/tagEditor/jquery.caret.min.js"></script>
+        <script src="static/js/tagEditor/jquery.tag-editor.min.js"></script>
+
+
+        <!--    Internal Libs -->
+        <script src="static/js/data/api.js"></script>
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+        <!-- External Fonts (no google for china) -->
+        <link href="static/css/Lato.css" rel="stylesheet" />
+        <link href="static/css/Exo.css" rel="stylesheet" />
+        <link href="static/css/Cuprum.css" rel="stylesheet" />
+        <link rel="stylesheet" href="static/css/main.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/fa_solid.css" />
+        <link rel="stylesheet" href="static/css/lazy_load.css" />
+        <link rel="stylesheet" href="static/css/typeahead.css" />
+
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+        <title>Developmental AI: Home</title>
+
+        <link rel="icon" type="image/png" href="favicon.ico">
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GT7LEVW06Z"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-GT7LEVW06Z');
+        </script>
+        <!-- head block ends here-->
+        
+    </head>
+
+    <body>
+    <!-- NAV -->
+    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #e7ebf1;" id="main-nav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                  <img class="logo" src="static/images/small_logo.png" style="width: 300px;"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" style="font-family: 'Ubuntu', sans-serif;">Home</a>
+                        </li>
+                        
+                        <li class="nav-item ">
+                            <a class="nav-link" href="papers.html" style="font-family: 'Ubuntu', sans-serif;">Papers</a>
+                        </li>
+                        
+                        <li class="nav-item ">
+                            <a class="nav-link" href="meetings.html" style="font-family: 'Ubuntu', sans-serif;">Meetings</a>
+                        </li>
+                        
+                        <li class="nav-item ">
+                            <a class="nav-link" href="join_us.html" style="font-family: 'Ubuntu', sans-serif;">Join Us</a>
+                        </li>
+                        
+                        <li class="nav-item ">
+                            <a class="nav-link" href="faq.html" style="font-family: 'Ubuntu', sans-serif;">FAQ</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+
+        
+        <!-- User Overrides -->
+
+        
+<style>
+  .back {
+    background: url("static/images/main.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .back h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+  }
+</style>
+
+<image src="static/images/big_logo.png" style="padding-top: 8vh; width: 70%; min-width: 240px; max-width: 960px; display: block;
+  margin-left: auto;
+  margin-right: auto;" alt="A community of researchers at the intersection of developmental science and machine learning"></image>
+<!-- Acknowledgements Section -->
+<p class="infopage-text" style="padding-top: 8vh; width: 70%; min-width: 240px; max-width: 960px; display: block;
+  margin-left: auto; margin-right: auto;">Modern artificial learning systems still pale in comparison to the competencies of young human learners. The differences between human learning and the paradigms that currently guide machine learning are striking. For example, children actively identify both the concepts to be learned and the data items used for learning, they infer the labels for learning from ambiguous perceptual data, and they learn from continuous streams of percepts without storing and curating large datasets. Artificial intelligence researchers are increasingly looking to developmental science for ideas and inspiration to improve machine learning, while developmental scientists are adopting tools from data science and machine learning to analyze large datasets and gain insights into developmental processes. The Developmental AI community aims to catalyze new connections between the developmental and machine learning research communities by bringing together researchers in linguistics, psychology, cognitive science and neuroscience with investigators working in computer vision, machine learning and robotics.
+</p>
+
+
+        <div class="container">
+            <!-- Tabs -->
+            <div class="tabs">
+                 
+            </div>
+            <!-- Content -->
+            <div class="content">
+                 
+            </div>
+        </div>
+
+        <!-- body block ends here-->
+        
+
+    </body>
+
+</html>
